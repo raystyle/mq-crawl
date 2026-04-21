@@ -1,12 +1,16 @@
 # mq-crawler
 
-基于 [mq-crawler](https://github.com/harehare/mq) 修改的网页爬虫，
-项目地址：<https://github.com/raystyle/mq-crawl>。
-抓取 HTML 内容并转换为 Markdown，支持使用 [mq](https://mqlang.org) 查询对内容进行过滤和转换。
+基于 [mq-crawler](https://github.com/harehare/mq) 修改的网页爬虫，抓取 HTML 内容并转换为 Markdown，支持使用 [mq](https://mqlang.org) 查询对内容进行过滤和转换。
 
 相比原版的改动：移除了 robots.txt 限制，屏蔽了 chromiumoxide 的 CDP 反序列化警告日志。
 
 ## 安装
+
+**下载预编译二进制（推荐）**
+
+从 [GitHub Releases](https://github.com/raystyle/mq-crawl/releases) 下载对应平台的二进制文件，无需安装 Rust 工具链。
+
+**从源码构建**
 
 ```sh
 cargo install mq-crawler
